@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -225,4 +226,233 @@
 
 
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>DRINKZONE</title>
+    <link rel="icon" href="./imagenes/Icono.png">
+</head>
+<body>
+    <header>
+        <div class="logo-titulo">
+            <img src="./imagenes/logo-drinkzone.png" class="logo">
+        <h1>DRINKZONE LICORES</h1>
+        </div>
+
+        <nav>
+            <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#nosotros">Quienes somos</a></li>
+
+
+            <li class="dropdown">
+                <a href="#">Servicios</a>
+
+            <ul class="submenu">
+                <li><a href="#premium">Licores premium</a></li>
+                <li><a href="#nacionales">Licores Nacionales</a></li>
+                <li><a href="#cervezas">Cervezas</a></li>
+            </ul>
+            
+            </li>
+
+
+            <li class="dropdown">
+            <a href="#contacto">Contacto</a>
+            </li>
+
+            <li>
+                <a href="#" onclick="toggleCarrito()">🛒</a>
+            </li>
+
+        </ul>
+        </nav>
+
+<div id="nosotros" class="seccion-nosotros">
+
+    <div class="info-nosotros">
+        <a href="#" class="cerrar">x</a>
+        <h2>Quiénes somos</h2>
+
+        <p>
+        En DrinkZone ofrecemos licores, cervezas y bebidas premium 
+        con excelente calidad, precios accesibles y servicio rápido.
+        </p>
+    </div>
+
+</div>
+
+
+
+    </header>
+    
+    
+    <div class="Bienvenida">
+        <h2>BIENVENIDOS A DRINKZONE.</h2>
+        <p>En Drinkzone encontrarás los mejores licores,
+        cervezas y bebidas premium de la ciudad a un precio accesible y con servicio rapido a domiclio.
+        </p>
+    </div>
+
+
+    <div class="seccion-premium" id="premium">
+
+        <h2 class="titulo-seccion">Licores Premium.</h2>
+        <div class="contenedor-productos">
+
+        <div class="producto">
+            <img src="./imagenes/bebidapremiun_tequila_jc_silver.avif" alt="Tequila">
+            <h3>Tequila Jose Cuervo-Silver</h3>
+            <p class="precio">$78.000</p>
+            <p class="descripcion">Disfruta del auténtico sabor del tequila con nuestra selección de marcas premium.</p>
+            <button onclick="agregarAlCarrito('Tequila Jose Cuervo-Silver', 78000)"> 🛒 Agregar al carrito</button>
+        </div>
+        
+        <div class="producto">
+            <img src="./imagenes/bebidapremiun_whiskyblack.avif" alt="Whisky">
+            <h3>Whisky Johnnie Walker Black Label</h3>
+            <p class="precio">$195.000</p>
+            <p class="descripcion">Disfruta del auténtico sabor del whisky con nuestra selección de marcas premium.</p>
+            <button onclick="agregarAlCarrito('Whisky Johnnie Walker Black Label', 195000)"> 🛒 Agregar al carrito</button>
+        </div> 
+
+        <div class="producto">
+            <img src="./imagenes/bebidapremium_bombayginebra.webp" alt="Ginebra">
+            <h3>Ginebra Bombay Sapphire</h3>
+            <p class="precio">$155.000</p>
+            <p class="descripcion">Disfruta del auténtico sabor del ginebra con nuestra selección de marcas premium.</p>
+            <button onclick="agregarAlCarrito('Ginebra Bombay Sapphire', 155000)"> 🛒 Agregar al carrito</button>
+        </div> 
+
+        <div class="producto">
+            <img src="./imagenes/bebidapremium_jagger.avif" alt="Jagger">
+            <h3>Jägermeister 1000ml</h3>
+            <p class="precio">$165.000</p>
+            <p class="descripcion">Disfruta del auténtico sabor del jägermeister con nuestra selección de marcas premium.</p>
+            <button onclick="agregarAlCarrito('Jägermeister 1000ml', 165000)"> 🛒 Agregar al carrito</button>
+        </div>
+    </div>
+
+    <div class="seccion-nacionales"  id="nacionales">
+        <h2 class="titulo-seccion">Licores Nacionales</h2>
+        <div class="contenedor-scroll">
+
+            <div class="producto">
+                <img src="./imagenes/licornacional_garrafarojaaguardiente.webp" alt="Aguardiente_garrafa_roja">
+                <h3>Aguardiente Antioqueño Garrafa roja 2000ml</h3>
+                <p class="precio">$120.000</p>
+                <p class="descripcion">Disfruta del auténtico sabor del aguardiente garrafa con nuestra selección de marcas nacionales.</p>
+                <button onclick="agregarAlCarrito('Aguardiente Antioqueño Garrafa roja 2000ml', 120000)"> 🛒 Agregar al carrito</button>
+                
+            </div>
+
+            <div class="producto">
+                <img src="./imagenes/licornacional_garrafaaguardienteazul.webp" alt="Aguardiente_garrafa_azul">
+                <h3>Aguardiente Antioqueño Garrafa Azul 2000ml</h3>
+                <p class="precio">$116.000</p>
+                <p class="descripcion">Disfruta del auténtico sabor del aguardiente garrafa con nuestra selección de marcas nacionales.</p>
+                <button onclick="agregarAlCarrito('Aguardiente Antioqueño Garrafa Azul 2000ml', 116000)"> 🛒 Agregar al carrito</button>
+            </div>
+
+            <div class="producto">
+                <img src="./imagenes/licornacional_garrafaverdeaguardiente.webp" alt="Aguardiente_garrafa_verde">
+                <h3>Aguardiente Antioqueño Garrafa verde 2000ml</h3>
+                <p>$95.000</p>
+                <p class="descripcion">Disfruta del auténtico sabor del aguardiente garrafa con nuestra selección de marcas nacionales.</p>
+                <button onclick="agregarAlCarrito('Aguardiente Antioqueño Garrafa verde 2000ml', 95000)"> 🛒 Agregar al carrito</button>
+            
+            </div>
+
+            <div class="producto">
+                <img src="./imagenes/licor_nacional_LITRO_AGUARDIENTE_ROJO.webp" alt="Aguardiente_litro_rojo">
+                <h3>Aguardiente Antioqueño Litro rojo 1000ml</h3>
+                <p class="precio">$60.000</p>
+                <p class="descripcion">Disfruta del auténtico sabor del aguardiente litro con nuestra selección de marcas nacionales.</p>
+                <button onclick="agregarAlCarrito('Aguardiente Antioqueño Litro rojo 1000ml', 60000)"> 🛒 Agregar al carrito</button>
+            
+            </div>
+
+            <div class="producto">
+                <img src="./imagenes/Licor_nacional_litro_azul_aguardiente.webp" alt="Aguardiente_litro_azul">
+                <h3>Aguardiente Antioqueño Litro azul 1000ml</h3>
+                <p class="precio">$55.000</p>
+                <p class="descripcion">Disfruta del auténtico sabor del aguardiente litro con nuestra selección de marcas nacionales.</p>
+                <button onclick="agregarAlCarrito('Aguardiente Antioqueño Litro azul 1000ml', 55000)"> 🛒 Agregar al carrito</button>
+
+            </div>
+
+            <div class="producto">
+                <img src="./imagenes/licor_nacional_Aguardiente_verde_litro.webp" alt="Aguardiente_litro_verde">
+                <h3>Aguardiente Antioqueño Litro verde 1000ml</h3>
+                <p class="precio">$50.000</p>
+                <p class="descripcion">Disfruta del auténtico sabor del aguardiente litro con nuestra selección de marcas nacionales.</p>
+                <button onclick="agregarAlCarrito('Aguardiente Antioqueño Litro verde 1000ml', 50000)"> 🛒 Agregar al carrito</button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="seccion-cervezas"  id="cervezas">
+        <h2 class="titulo-seccion">Cervezas</h2>
+        <div class="contenedor-productos">
+
+            <div class="producto">
+                <img src="./imagenes/cerveza-aguila.avif" alt="Cerveza_aguila">
+                <h3>Cerveza Aguila</h3>
+                <p class="precio">$7.500</p>
+                <p class="descripcion">Disfruta del auténtico sabor de la cerveza con nuestra selección de marcas nacionales.</p>
+                <button onclick="agregarAlCarrito('Cerveza Aguila', 7500)"> 🛒 Agregar al carrito</button>
+            </div>
+
+            <div class="producto">
+                <img src="./imagenes/CERVEZA-PILSEN.webp" alt="Cerveza_pilsen">
+                <h3>Cerveza pilsen</h3>
+                <p class="precio">$4.000</p>
+                <p class="descripcion">Disfruta del auténtico sabor de la cerveza con nuestra selección de marcas nacionales.</p>
+                <button onclick="agregarAlCarrito('Cerveza Pilsen', 4000)"> 🛒 Agregar al carrito</button>
+            </div>
+
+            <div class="producto">
+                <img src="./imagenes/cerveza-corona.avif" alt="Cerveza_corona">
+                <h3>Cerveza Corona</h3>
+                <p class="precio">$4.700</p>
+                <p class="descripcion">Disfruta del auténtico sabor de la cerveza con nuestra selección de marcas nacionales.</p>
+                <button onclick="agregarAlCarrito('Cerveza Corona', 4700)"> 🛒 Agregar al carrito</button>
+            </div>
+    
+        </div>
+    </div>  
+
+    <div class="seccion-contacto" id="contacto">
+
+    <h2 class="titulo-seccion">Contáctanos</h2>
+
+    <div class="contacto-info">
+        <p>📱 WhatsApp: +57 300 000 0000</p>
+        <p>📷 Instagram: @drinkzone</p>
+        <p>📧 Correo: drinkzone@gmail.com</p>
+    </div>
+
+</div>
+
+<div id="carrito" class="carrito">
+
+    <button onclick="toggleCarrito()" class="cerrar">x</button>
+
+    <h2>🛒 Carrito de Compras</h2>
+    <ul id="lista-carrito"></ul>
+    <p id="total">Total: $0</p>
+
+    <button class="btn-comprar" onclick="comprar()">🛒 Comprar</button>
+</div>
+
+<script src="script.js"></script>
+
+
+</body>
+
 </html>
