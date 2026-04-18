@@ -287,6 +287,72 @@ text-shadow:
     z-index: 6000;
 }
 
+
+@media (max-width: 768px){
+
+    header{
+        padding: 10px;
+    }
+
+    nav ul{
+        gap: 10px;
+        margin-right: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul li a{
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .logo{
+        width: 70px;
+        margin-top: 0;
+    }
+
+    .Bienvenida{
+        padding: 80px 20px;
+        text-align: center;
+    }
+
+    .Bienvenida h2{
+        font-size: 24px;
+    }
+
+    .Bienvenida p{
+        font-size: 14px;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .contenedor-productos{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .producto{
+        width: 90%;
+    }
+
+    .submenu{
+        position: static;
+        width: 100%;
+        border: none;
+    }
+    
+    .dropdown:hover .submenu{
+        display: block;
+    }
+    
+
+
+}
+
+
+
+
+
 .carrito.activo{
     right: 0; 
 }
